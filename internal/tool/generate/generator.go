@@ -115,7 +115,7 @@ func Generate(dir string, pkgs []string, opt Options) error {
 	}
 	fset := token.NewFileSet()
 	cfg := &packages.Config{
-		Mode:      packages.NeedName | packages.NeedSyntax | packages.NeedImports | packages.NeedTypes | packages.NeedTypesInfo,
+		Mode:      packages.NeedName | packages.NeedSyntax | packages.NeedImports | packages.NeedDeps | packages.NeedTypes | packages.NeedTypesInfo,
 		Dir:       dir,
 		Fset:      fset,
 		ParseFile: parseNonWeaverGenFile,

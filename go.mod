@@ -1,6 +1,6 @@
 module github.com/ServiceWeaver/weaver
 
-go 1.21
+go 1.24
 
 require (
 	github.com/BurntSushi/toml v1.3.2
@@ -109,3 +109,5 @@ require (
 	modernc.org/strutil v1.1.3 // indirect
 	modernc.org/token v1.0.1 // indirect
 )
+
+replace github.com/ServiceWeaver/weaver => ../weaver
